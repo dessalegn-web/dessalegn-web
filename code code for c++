@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+// Function to get input from the user
+int getInput() {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    return num;
+}
+
+// Function to calculate the square of a number
+int square(int x) {
+    return x * x;
+}
+
+// Function to display the result
+void displayResult(int result) {
+    cout << "The square is: " << result << endl;
+}
+
+// Main function where execution starts
+int main() {
+    int number = getInput();       // Call function to get input
+    int result = square(number);   // Call function to calculate square
+    displayResult(result);         // Call function to display result
+
+    return 0;
+}
